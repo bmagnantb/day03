@@ -1,0 +1,66 @@
+*, *::before, *::after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+header {
+	height: 30vh;
+    margin-bottom: 1em;
+    text-align: center;
+    background-image: url('http://www.davidbawiec.com/wp-content/uploads/2013/06/AD-Widescreen-Wall-arrested-development-2053936-1280-800.jpg');
+    background-size: cover;
+    background-position: 50% 20%;
+
+}
+header h1 {
+	margin: 0;
+	}
+.grid {
+    font-size: 0px;
+    text-align: justify;
+    position: relative;
+    padding: 0 5%;
+}
+.grid::after {
+    content: "";
+    display: inline-block;
+    width: 100%;
+}
+.grid > * {
+    font-size: 1rem;
+    display: inline-block;
+    width: 100%;
+    text-align: left;
+    vertical-align: top;
+    transition: all .5s ease;
+    margin-bottom: .5em;
+}
+form {
+    border-bottom: 1px solid #cdcdcd;
+}
+h3 {
+    margin-bottom: 0;
+    font-size: .8em;
+    font-family: Helvetica, Arial, sans;
+}
+input, textarea, select {
+    margin-bottom: .5em;
+    width: 100%;
+    font-size: 1.1em;
+    border: 1px solid #ccc;
+    background-color: #fafafa;
+    border-radius: 0;
+}
+textarea {
+    height: 5em;
+}
+@media (min-width: 640px) {
+    .grid3-640 > * {
+        width: 30%;
+    }
+}
